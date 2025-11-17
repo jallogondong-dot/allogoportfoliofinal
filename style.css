@@ -1,0 +1,594 @@
+body{
+    font-family: "Inter", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    z-index: 1;
+ }
+
+ [id]{
+    scroll-margin-top: 80px;
+ }
+
+ .mesLogo {
+    position: relative;
+    width: 300px;
+ }
+
+ .mesLogo img{
+    padding-top: 14px;
+ }
+
+ .logo {position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo.sticky {
+    opacity: 0;
+    position: absolute;
+}
+
+header.sticky .logo.normal {
+    opacity: 0;
+}
+
+header.sticky .logo.sticky {
+    opacity: 1;
+}
+
+ header.sticky{
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    box-shadow: 0px 5px 20px black;
+}
+
+header.sticky .logo {
+    width: 300px;
+    padding-top: 14px;
+}
+
+header.sticky nav ul li a{
+    color: black;
+}
+
+header.sticky .navbar li a:hover{
+    color: #2c2cd7;
+    border-bottom: 2px solid #2c2cd7;
+}
+
+@media (max-width: 911px) {
+header, .header.sticky{
+    padding: 10px 20px;
+}
+}
+
+nav{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+.logo{
+    width: 300px;
+    padding-top: 13px;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #2c2cd7;
+}
+
+h1{
+    font-size: 35px;
+    padding-top: 200px;
+    text-shadow: 1px 3px 12px #0d1f3b;
+}
+
+h1 span{
+    color: #2c2cd7;
+}
+
+h2{
+    text-align: center;
+    text-shadow: 1px 2px 15px #0A192F;
+}
+
+span{
+    color: #2c2cd7;
+}
+
+p{
+    font-weight: 300;
+}
+
+#acceuil {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(pexels-danny-meneses.jpg);
+    background-size: cover;
+}
+
+#acceuil button{
+    padding: 10px 20px;
+    background: #2c2cd7;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    text-transform: uppercase;
+    align-items: center;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+}
+
+#acceuil button:hover{
+    padding: 10px 20px;
+    background: #2c2cd7c3;
+    color: black;
+    font-weight: bold;
+    margin-top: 50px;
+    text-transform: uppercase;
+    align-items: center;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+}
+
+#acceuil button a{
+    text-decoration: none;
+    color: white;
+}
+
+#acceuil button a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+#apropos{
+    background-color:#0A192F;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.identite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.identite p{
+    text-align: justify;
+    padding: 10px;
+    margin-right: 100px;
+    margin-left: 200px;
+}
+
+.photo img{
+    margin-right: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 250px;
+    box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.16);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.mesLiens a{
+    font-weight: bold;
+    padding-top: 5px;
+    color: #2c2cd7;
+}
+
+.mesLiens a:hover{
+    color: #8892B0;
+}
+
+.mesLiens {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding-left: 70px;
+}
+
+.mesLiens .mesIcones a{
+    padding-left: 20px;
+}
+
+#projets{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background-color: #8892B0;
+}
+
+.mespros{
+    margin: 50px 40px 0px 40px;
+    display: flex;
+    gap: 50px;
+}
+
+.mesprojet{
+    text-align: center;
+    background-color: #e0e2e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.8);
+ }
+
+ .mesprojet button a{
+    text-decoration: none;
+    color: #0A192F;
+ }
+
+ .mesprojet button a:hover{
+    color: #8892B0;
+ }
+
+ .mesprojet button{
+    padding: 10px 30px;
+    background: #2c2cd7;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin: 50px;
+    align-items: center;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+ }
+
+ .mesprojet button:hover{
+    padding: 10px 35px;
+    background: #2c2cd7;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 50px;
+    align-items: center;
+    border-radius: 5px;
+    border: transparent;
+    letter-spacing: 4px;
+    cursor: pointer;
+ }
+
+ #competences{
+    background-color: #f7f7fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 25px 0px 120px 0px;
+ }
+
+ .skills{
+    display: flex;
+    gap: 50px;
+ }
+
+ .boiteDeSkills{
+    background-color: #8892B0;
+    padding: 20px 30px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px black;
+ }
+
+ .comp{
+    margin-bottom: 15px;
+ }
+
+ .nomDeComp{
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+ }
+
+ .barDeProgession{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+ }
+
+ .progression{
+    background-color: #2c2cd7;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s ease;
+ }
+
+ .p70{
+    width: 70%;
+ }
+ .p50{
+    width: 50%;
+ }
+ .p90{
+    width: 90%;
+ }
+ .p65{
+    width: 65%;
+}
+ .p60{
+    width: 60%;
+ }
+ .p85{
+    width: 85%;
+ }
+
+ #contact{
+    background-color:#0A192F;
+    color: white;
+    padding-bottom: 25px;
+    align-content: center;
+    justify-content: center;
+ }
+
+ .monFormulaire form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+ }
+
+ .monFormulaire label{
+    margin-bottom: 5px;
+    text-align: left;
+ }
+ .nomPrenom{
+    display: flex;
+    gap: 30px;
+ }
+
+ .nomPrenom > div{
+    flex: 1;
+}
+
+.monFormulaire form textarea{
+    height: 190px;
+    resize: none;
+}
+
+ .nomPrenom input,.sujet input, textarea{
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    outline: none;
+ }
+
+ .btn-submit input{
+    background: #2c2cd7;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+ }
+
+ .btn-submit input:hover{
+    background: #64ffdbbb;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+
+ }
+
+ .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 450px;
+ }
+
+ @media ( max-width:991px){
+    nav {
+        gap: 40px;
+    }
+
+    nav ul{
+        gap: 25px;
+    }
+
+    .mesLogo{
+        width: 200px;
+    }
+
+    .logo{
+        width: 200px;
+    }
+
+    .identite{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .identite p{
+        margin: 0;
+    }
+
+    .mesLiens {
+        gap: 40px;
+        padding-left: 0;
+    }
+
+    .mespros{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boiteDeSkills{
+        width: 90%;
+    }
+
+    .copyright{
+        gap: 50px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+ }
+
+ @media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #acceuil h1 {
+        font-size: 26px;
+        padding: 150px 20px 0 20px;
+    }
+
+    #apropos{
+        padding: 80px 20px;
+    }
+
+    .photo img{
+        margin: 0;
+        width: 180px;
+    }
+
+    .mespros img{
+        width: 90%;
+    }
+
+    .nomPrenom{
+        flex-direction: colum;
+        gap: 10px;
+    }
+
+    .monFormulaire form{
+        width: 90%;
+    }
+ }
+
+ @media (max-width: 480px) {
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header.sticky .logo {
+        width: 150px;
+        padding-top: 14px;
+    }
+
+    .logo .sticky{
+        width: 150px;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    #acceuil h1 {
+        padding-top: 190px;
+        font-size: 22px;
+    }
+
+    .mesIcones{
+        width: 180px;
+    }
+
+    .mesprojet{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mespros{
+        margin: 20px;
+    }
+
+    .boiteDeSkills{
+        width: 100%;
+    }
+
+    .monFormulaire form {
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .textarea{
+        height: 150px;
+    }
+
+    .copyright{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .monFormulaire form textarea{
+        height: 100px;
+        width: 225px;
+        resize: none;
+ }
+
+ .nomPrenom input{
+    width: 95px;
+ }
+
+ .sujet input{
+    width: 225px;
+ }
+
+
+
+}
