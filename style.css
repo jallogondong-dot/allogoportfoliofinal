@@ -48,13 +48,13 @@ header.sticky .logo.sticky {
 
  header.sticky{
     background: rgb(255, 255, 255);
-    padding: 5px 10px;
+    padding: 20px 10px;
     box-shadow: 0px 5px 20px black;
 }
 
 header.sticky .logo {
     width: 300px;
-    padding-top: 14px;
+    padding-top: 0px;
 }
 
 header.sticky nav ul li a{
@@ -67,29 +67,30 @@ header.sticky .navbar li a:hover{
 }
 
 @media (max-width: 911px) {
-header, .header.sticky{
+header, header.sticky{
     padding: 10px 20px;
 }
 }
 
 nav{
-    padding: 10px;
+    padding: 10px 20px ;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 250px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .logo{
     width: 300px;
-    padding-top: 13px;
+    padding-top: 0px;
 }
 
 nav ul{
     display: flex;
-    gap: 50px;
-    text-decoration: none;
-    justify-content: center;
+    gap: 1.5rem;
+    list-style:none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li{
@@ -425,6 +426,11 @@ p{
     gap: 450px;
  }
 
+@media (max-width: 911px) {
+header, .header.sticky{
+    padding: 10px 20px;
+}
+
  @media ( max-width:991px){
     nav {
         gap: 40px;
@@ -435,11 +441,11 @@ p{
     }
 
     .mesLogo{
-        width: 200px;
+        width: 300px;
     }
 
     .logo{
-        width: 200px;
+        width: 300px;
     }
 
     .identite{
@@ -481,7 +487,7 @@ p{
  @media (max-width: 768px){
     nav{
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
     }
 
     nav ul{
@@ -517,33 +523,70 @@ p{
     }
  }
 
- @media (max-width: 480px) {
+ @media (max-width: 480px){
 
     nav ul{
-        flex-direction: column;
-        gap: 10px;
+        display: none;
+        opacity: 0;
     }
+
+    header.sticky .mesLogo{
+        background-color: white;
+        box-shadow: 0px 1px 10px black;
+        overflow:hidden;
+        
+     }
 
     header.sticky .logo {
-        width: 150px;
-        padding-top: 14px;
+        width:135px;
+        background-color: #64ffdb00;
+        padding: 15px 50px;
     }
 
-    .logo .sticky{
-        width: 150px;
+    header.sticky {
+        background: #8892B0;
     }
+
+    header {
+        position: fixed;
+        padding: 0px 0px;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        z-index: 1;
+    }
+
+     section{
+         max-width: 100%;
+         display:flex;
+         flex-direction:column;
+         align-items: center;
+         justify-content: center;
+     }
+
+    #acceuil h1 {
+
+        font-size: 25px;
+        padding:  250px 10px 1px 10px;
+        text-align: center;
+    }
+
+     .mesLogo{
+         max-width: 8%;
+         padding:22px 110px;
+         background-color: #0A192F;
+         box-shadow: 0px 1px 10px white;
+         border-radius: 10px;
+     }
+     
 
     .logo{
         width: 150px;
-    }
-
-    #acceuil h1 {
-        padding-top: 190px;
-        font-size: 22px;
+        padding: 15px 50px;
+        background-color:#a6b9b900
     }
 
     .mesIcones{
-        width: 180px;
+        width: 160px;
     }
 
     .mesprojet{
@@ -559,6 +602,14 @@ p{
         width: 100%;
     }
 
+     #contact {
+        background-color: #0A192F;
+        color: white;
+        padding-bottom: 25px;
+        align-content: center;
+        justify-content: center;
+    }
+
     .monFormulaire form {
         max-width: 300px;
         margin: 0 auto;
@@ -566,18 +617,16 @@ p{
         flex-direction: column;
         gap: 15px;
     }
+     
     .textarea{
         height: 150px;
     }
 
-    .copyright{
-        flex-direction: column;
-        gap: 10px;
-    }
+    
 
     .monFormulaire form textarea{
         height: 100px;
-        width: 225px;
+        width: 278px;
         resize: none;
  }
 
@@ -585,9 +634,39 @@ p{
     width: 95px;
  }
 
- .sujet input{
-    width: 225px;
+ .sujet{
+    
+        flex-direction: colum;
+        gap: 10px;
  }
+
+ .sujet input{
+    width: 278px;
+ }
+
+ .double-input{
+    padding-left: 0px;
+ }
+
+.double-input input{
+    width: 122px;
+}
+
+.copyright{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+}
+     .copyright p{
+         font-size: 14px;
+         max-width: 80%;
+         text-align: center;
+}
+
+}
 
 
 
